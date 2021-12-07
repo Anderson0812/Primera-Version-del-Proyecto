@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK DE LOS ICONOS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!---LINK DE LOS ESTILOS (archivo que tenga la extension .css)-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title></title>
+</head>
+<body>
+    <center>      
+        <form class="formulario" method="POST" action="VERIFICA_USUARIO.php">
+            <h1>LOGIN</h1>
+            <div class="marco"> <!--este DIV coje los tres INPUT-->
+                
+                <!--PARA EL PRIMER INPUT-->
+                <div class="input-contenedor">
+                   <i class="fas fa-user icon"></i> <!--ICON => es para poder ponerle estilos-->
+                   <input type="text" placeholder="Usuario" name="usuario" required>                   
+                </div>
+                               
+                <!--PARA EL SEGUNDO INPUT-->
+                <div class="input-contenedor">
+                   <i class="fas fa-key icon"></i> <!--ICON => es para poder ponerle estilos-->
+                   <input type="password" placeholder="Contraseña" name="clave" required>                   
+                </div>
+                
+                <!--PARA EL BOTON ENVIAR-->
+                <input type="submit" value="Login" name="enviar" class="button"><br><br>
+                           
+                <!--HACEMOS UN PARRAFO-->
+                <p>Al registrarte, aceptas nuestras Condiciones de uso y Politica de privacidad.</p>
+            
+                <!--HACEMOS UN PARRAFO-->
+                <p>¿Ya tienes una cuenta? <a href="REGISTRARSE.php" class="parrafo">Registrate</a></p>
+            </div>                                    
+        </form>           
+    </center>  
+</body>
+</html>

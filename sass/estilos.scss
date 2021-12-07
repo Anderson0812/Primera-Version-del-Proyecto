@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: cadetblue;
+    
+    .marco{
+        width: 80%;           /*para dar el tamaño*/
+        padding: 15px;        /*sirve para separar el contenido de los bordes del formulario*/
+    }
+
+    .formulario{
+        width: 50%;                 /*para dar el tamaño del formulario */
+        background: #fff;         /*para dar color al fondo del formulario*/
+        margin-top: 150px;          /*para bajar el formulario un poco*/
+        padding: 3px;               /*para separar un poco de los bordes del formulario*/
+        border-radius: 5px;         /*para darle un estilo de radio a las esquinas*/
+    }
+
+    h1 {
+        text-align: center;         /*para alinear el texto*/
+        color: #1a2437;           /*para dar color a las letras*/
+        font-size: 40px;            /*para dar tamaño a las letras*/
+    }
+
+    /*DAR ESTILOS A TODOS LOS INPUT (cada recuadro)*/
+    input[type="text"],
+    input[type="password"] {
+        font-size: 20px;            /*para dar tamaño a las letras*/
+        width: 82%;                 /*para dar tamaño a los cuadros*/
+        padding: 10px;              /*para separar los nombres de los bordes de los cuadros*/
+        border: none;               /*para que los recuadros no tengan borde*/
+    }
+
+    /*DAR ESTILOS A LOS RECUADROS*/
+    .input-contenedor {
+        margin-bottom: 15px;        /*para dar separacion entre recuadros*/
+        border: 1px solid #aaa;   /*para dar borde a cada recuadro*/
+    }
+
+    /*DAR ESTILOS A CADA ICONO*/
+    .icon {
+        min-width: 50px;            /*para dar tamaño a los recuadros de los iconos*/
+        text-align: center;         /*para centrar a cada icono*/
+        color: #999;              /*para dar color a los iconos*/
+    }
+
+    /*DAR ESTILO AL BOTON DE ENVIO*/
+    .button {
+        border: none;               /*para quitar el border al boton*/
+        width: 100%;                /*para dar tamaño al boton*/
+        color: white;             /*para dar color a las letras*/
+        font-size: 20px;            /*para dar tamaño a las letras*/
+        background: #1a2437;      /*para dar color al fondo*/
+        padding: 15px 20px;         /*para separar las letras del borde del cuadro*/
+        border-radius: 5px;         /*para darle un estilo de radio a las esquinas*/
+        cursor: pointer;            /*cuando ponemos el cursor sale una manito*/
+    }
+
+    .button:hover {
+        background: cadetblue;    /*cuando ponemos el cursor sale otro color*/
+    }
+
+    /*DAR ESTILOS AL PARRAFO*/
+    p {
+        text-align: center;         /*para centrar el texto*/
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px;
+    }
+
+    /*DAR ESTILOS A LA DIRECCION (Inicia Sesion)*/
+    .parrafo {
+        text-decoration: none;      /*para quitar la rayita*/
+        color: #1a2437;           /*para darle color a la letra*/
+        font-weight: 600;           /*para darle grosor a cada letra*/
+    }
+
+    .parrafo:hover {
+        color: cadetblue;        /*al momento de pasar el cursor cambia el color*/
+    }
+
+    /*ESTE ESTILO ES CUANDO ACHICAMOS LA PAGINA, SE ADAPTE*/
+    @media(min-width:768px) {
+        .formulario {
+            margin: auto;          /*para que el formulario se centre*/
+            margin-top: 150px;     /*para que el formulario baje un poco*/
+            border-radius: 2%;     /*para darle forma ovalada a las esquinas*/
+        }
+    }
+}
